@@ -1,32 +1,56 @@
 {
-  "name": "FoodWaster POC",
-  "short_name": "FoodWaster",
-
-  "description": "A proof-of-concept for using Declarative Web Push for notifications in a PWA for a food waste reduction app.",
-
-  "start_url": "./index.html",
-
-  "display": "standalone",
-
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
-
-  "orientation": "portrait",
-
-  "scope": "./",
-
-  "lang": "en",
-  "dir": "ltr",
-
-  "icons": [],
-
-  "categories": [],
-
-  "screenshots": [],
-
-  "related_applications": [],
-  "prefer_related_applications": false,
-
-  "shortcuts": []
-
+	"id": "/",
+	"name": "FoodWasterPOC",
+	"short_name": "FoodWaster",
+	"description": "A proof-of-concept for using Declarative Web Push for notifications in a PWA for a food waste reduction app.",
+	"lang": "en",
+	"dir": "ltr",
+	"start_url": "/?source=pwa",
+	"scope": "/",
+	"display": "standalone",
+	"display_override": [
+		"standalone",
+		"minimal-ui",
+		"browser"
+	],
+	"orientation": "any",
+	"theme_color": "#1c1c1c",
+	"background_color": "#1c1c1c",
+	"categories": [],
+	"capture_links": "existing-client-navigate",
+	"launch_handler": {
+		"client_mode": "focus-existing"
+	},
+	"icons": [
+		{
+			"src": "/assets/icon.svg",
+			"type": "image/svg+xml",
+			"sizes": "any",
+			"purpose": "any"
+		},
+		{
+			"src": "/assets/favicon.ico",
+			"type": "image/x-icon",
+			"sizes": "256x256",
+			"purpose": "any"
+		}
+  ],
+	"shortcuts": [
+		{
+			"name": "Home",
+			"short_name": "Home",
+			"description": "Go to Home",
+			"url": "/",
+			"icons": [
+				{ "src": "/assets/icon.svg", "type": "image/svg+xml", "sizes": "any" }
+			]
+		}
+	],
+	"protocol_handlers": [
+		{
+			"protocol": "web+foodwaster",
+			"url": "/?open=%s"
+		}
+	],
+	"prefer_related_applications": false
 }
