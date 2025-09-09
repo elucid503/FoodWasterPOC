@@ -6,13 +6,15 @@ import config from "./config.json" assert { type: "json" };
 
 const app = express();
 
+app.use(express.static("../frontend")); // required for frontend resolving assets/out
+
 // Routes
 
 app.get("/", (_req, res) => {
 
     // Main Page
 
-    res.sendFile("/frontend/app.html", { root: "." });
+    res.sendFile("/frontend/app.html", { root: ".." }); // important: if ran from top level dir using ./start.sh, root must be set to ..
 
 });
 

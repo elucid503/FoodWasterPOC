@@ -1,0 +1,86 @@
+// Font Import 
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap');
+
+// Variables 
+
+$bg-color: #1c1c1c;
+$font-color: #eefaff;
+$font-color-muted: #c0c7c9;
+
+$primary-color: #64b2df;
+$secondary-color: #f0f0f0;
+
+$element-color-dark: #141414;
+$element-color-medium: #161616;
+$element-color-light: #272727;
+
+$font-size-large: 2rem;
+$font-size-medium: 1rem;
+$font-size-small: 0.5rem;
+
+$spacing-small: 7px;
+$spacing-medium: 15px;
+$spacing-large: 25px;
+
+$border-radius-small: 7px;
+$border-radius-medium: 10px;
+$border-radius-large: 15px;
+
+$border-default: 1px solid rgba(255, 255, 255, 0.1);
+
+// Other SCSS Files 
+
+@import 'components/containers';
+
+// Global Styles
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    line-height: 1.6;
+
+}
+
+html {
+
+    height: 100%;
+    width: 100%;
+
+    // Webkit Overflow Handling
+
+    overscroll-behavior-block: none!important;
+    overscroll-behavior-inline: none!important;
+
+}
+
+body {
+
+    height: 100%;
+
+    background-color: black;
+
+    font-family: 'Urbanist', sans-serif;
+    color: $font-color;
+
+    overflow-x: hidden;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+
+        color: $primary-color;
+        transition: color 0.3s ease-in-out;
+
+    }
+
+}
