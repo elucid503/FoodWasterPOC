@@ -7,8 +7,9 @@
 $bg-color: #1c1c1c;
 $font-color: #eefaff;
 $font-color-muted: #c0c7c9;
+$font-color-inverted: #101114;
 
-$primary-color: #64b2df;
+$primary-color: #a5cfe7;
 $secondary-color: #f0f0f0;
 
 $element-color-dark: #141414;
@@ -17,7 +18,7 @@ $element-color-light: #272727;
 
 $font-size-large: 2rem;
 $font-size-medium: 1rem;
-$font-size-small: 0.5rem;
+$font-size-small: 0.75rem;
 
 $spacing-small: 7px;
 $spacing-medium: 15px;
@@ -32,6 +33,7 @@ $border-default: 1px solid rgba(255, 255, 255, 0.1);
 // Other SCSS Files 
 
 @import 'components/containers';
+@import 'components/buttons';
 
 // Global Styles
 
@@ -41,8 +43,6 @@ $border-default: 1px solid rgba(255, 255, 255, 0.1);
 
     margin: 0;
     padding: 0;
-
-    line-height: 1.6;
 
 }
 

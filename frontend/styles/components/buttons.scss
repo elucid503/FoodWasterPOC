@@ -1,0 +1,47 @@
+button {
+    
+    border: $border-default;
+    border-radius: $border-radius-medium;
+
+    padding: $spacing-small $spacing-medium;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: filter 0.2s;
+
+    &.accented {
+
+        background-color: $primary-color;
+        color: $font-color-inverted;   
+
+    }
+
+    &.white {
+
+        background-color: $secondary-color;
+        color: $font-color-inverted;   
+
+    }
+
+    &.dark {
+
+        background-color: $element-color-dark;
+        color: $font-color;   
+
+    }
+
+    &:hover {
+
+        filter: brightness(1.1);
+
+    }
+
+    &:active {
+
+        filter: brightness(0.9);
+
+    }
+    
+}

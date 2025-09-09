@@ -117,9 +117,29 @@
 
     }
 
+    &.gap-small {
+
+        gap: $spacing-small;
+
+    }
+
+    &.gap-medium {
+
+        gap: $spacing-medium;
+
+    }
+
+    &.gap-large {
+
+        gap: $spacing-large;
+
+    }
+
 }
 
 .text {
+
+    font-weight: 500; // base font weight
 
     &.small {
 
@@ -147,7 +167,7 @@
 
     &.bold {
 
-        font-weight: bold;
+        font-weight: 800;
 
     }
 
