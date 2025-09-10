@@ -4,9 +4,13 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/jquery": "^3.5.33"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "jquery": "4.0.0-rc.1"
   }
 }
