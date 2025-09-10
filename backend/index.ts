@@ -8,6 +8,16 @@ const app = express();
 
 app.use(express.static("../frontend")); // required for frontend resolving assets/out
 
+// Logging Middleware
+
+app.use((req, _res, next) => {
+
+    console.log(`${req.method} ${req.url}`);
+
+    next();
+
+});
+
 // Routes
 
 app.get("/", (_req, res) => {
