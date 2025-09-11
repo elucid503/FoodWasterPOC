@@ -81,7 +81,7 @@ app.post("/notify", express.json(), async (req, res) => {
                     "title":   "Test Notification",
                     "body":    "This is a test notification from the Food Waster proof-of-concept app. These notifications can be sent at any time, even when the app is closed!",
                     "silent":  false,
-                    "navigate": "https://previews.sprout.software",
+                    "navigate": "https://foodwasterpoc.sprout.software",
 
                 },
 
@@ -93,7 +93,7 @@ app.post("/notify", express.json(), async (req, res) => {
 
             const payload = await buildPushPayload(notifPayload, sub, {
 
-                subject: "mailto:paul@paulujlaky.com",
+                subject: "mailto:sprout@sprout.software",
                 publicKey: config.vapid.public,
                 privateKey: config.vapid.private,
 
