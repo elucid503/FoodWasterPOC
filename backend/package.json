@@ -5,12 +5,14 @@
   "private": true,
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/express": "^5.0.3"
+    "@types/express": "^5.0.3",
+    "@types/web-push": "^3.6.4"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
+    "@block65/webcrypto-web-push": "^1.0.2",
     "express": "^5.1.0"
   }
 }

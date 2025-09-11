@@ -4,6 +4,19 @@
 
         "port": 8080
 
+    },
+
+    "vapid": {
+
+        "public": "BL253OvYzN_eeh7aI3zPIL8_PdvYoxc9Dxj0KcpksRm8o_gXjflIcfj0I6wFFJ5iSPEn00LeE3at1nbSZOAqm6E",
+        "private": "RJzdy5_P9eIm0beJ_bMOAUSdQwTyUZvrcn3tOaJvF_w"
+
+    },
+
+    "testing": {
+
+        "notificationTimeout": 5000
+
     }
 
 }
